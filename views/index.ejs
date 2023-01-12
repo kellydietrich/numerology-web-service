@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/output.css">
+    <title>Numerology Institute</title>
+    <script src="/js/main.js"></script>
+    
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10">
+    <div class="flex items-center">
+      <img src='/assets/isolated-monochrome-white.svg' alt="Logo" class="h-4" />
+    </div>
+    <ul class="font-montserrat items-center hidden md:flex">
+      <li class="mx-3 ">
+        <a class="growing-underline" href="howitworks">
+          How it works
+        </a>
+      </li>
+      <li class="growing-underline mx-3">
+        <a href="features">Testimonies</a>
+      </li>
+      <li class="growing-underline mx-3">
+        <a href="pricing">Donate</a>
+      </li>
+    </ul>
+    <div class="font-montserrat hidden md:block">
+      <button class="mr-6"><a href="/login">Login</a></button>
+      <button class="py-2 px-4 text-white bg-black rounded-3xl">
+        <a href="/signup">Sign Up</a>
+      </button>
+    </div>
+    <div id="showMenu" class="md:hidden">
+      <img src='/assets/logos/Menu.svg' alt="Menu icon" />
+    </div>
+  </nav>
+  <div id='mobileNav' class="hidden px-4 py-6 fixed top-0 left-0 h-full w-full bg-secondary z-20 animate-fade-in-down">
+    <div id="hideMenu" class="flex justify-end">
+      <img src='/assets/logos/Cross.svg' alt="" class="h-16 w-16" />
+    </div>
+    <ul class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl">
+      <li class="my-6">
+        <a href="howitworks">How it works</a>
+      </li>
+      <li class="my-6">
+        <a href="features">Testimonies</a>
+      </li>
+      <li class="my-6">
+        <a href="pricing">Donate</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section
+    class="pt-24 md:mt-0 md:h-screen flex flex-col justify-center text-center text-darkBlue md:text-left md:flex-row md:justify-between md:items-center lg:px-48 md:px-12 px-4 ">
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+      <source src="/assets/background.mp4" type="video/mp4">
+    </video>
+    <div class="md:flex-1 md:mr-10">
+      <h1 class="font-pt-serif text-5xl font-bold mb-7">
+        Generate your
+        <span class="bg-left-bottom bg-no-repeat pb-2 bg-100%">
+          free numerology chart
+        </span>
+      </h1>
+      <p class="font-pt-serif font-normal mb-7">
+        Unlock your 8 core numbers including Karmic Lessons. Save your chart, share with friends, and discover more about what makes you <strong>you</strong>. 
+      </p>
+      <div class="font-montserrat">
+        
+        <button class=" btn2 px-6 py-4 rounded-lg mr-2 mb-2" role="button">
+          <a href="/signup">Get My Chart</a>
+        </button>
+        <button class="btn2 px-6 py-4 rounded-lg mr-2 mb-2">
+          <a href="#redir1">Learn More</a>
+        </button>
+      </div>
+    </div>
+    <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
+      <div class="relative">
+        <img src='/assets/Highlight1.svg' alt="" class="absolute -top-16 -left-10" />
+      </div>
+      <img src='/assets/Numerology Institute.svg' alt="Numerology Institute Logo" />
+      <div class="relative">
+        <img src='/assets/Highlight2.svg' alt="" class="absolute -bottom-10 -right-6" />
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="redir1" class="bg-darkBlue text-white sectionSize">
+    <div>
+      <h2 class="secondaryTitle bg-underline2 bg-100%">How it works</h2>
+    </div>
+    <div class="flex flex-col md:flex-row">
+      <div class="flex-1 mx-8 flex flex-col items-center my-4">
+        <div class="border-2 rounded-full bg-secondary text-black h-12 w-12 flex justify-center items-center mb-3">
+          1
+        </div>
+        <h3 class="font-montserrat font-medium text-center text-xl mb-2">Tell Us About Yourself</h3>
+        <p class="text-center font-montserrat">
+          Your birthday, current name and birth name is all we need.
+        </p>
+      </div>
+      <div class="flex-1 mx-8 flex flex-col items-center my-4">
+        <div class="border-2 rounded-full bg-secondary text-black h-12 w-12 flex justify-center items-center mb-3">
+          2
+        </div>
+        <h3 class="font-montserrat font-medium text-center text-xl mb-2">Uncover Your Numbers</h3>
+        <p class="text-center font-montserrat">
+          Gain insight into your core numbers--including Life Path, Destiny, Personality, Soul, Maturity & Karmic Lessons. 
+        </p>
+      </div>
+      <div class="flex-1 mx-8 flex flex-col items-center my-4">
+        <div class="border-2 rounded-full bg-secondary text-black h-12 w-12 flex justify-center items-center mb-3">
+          3
+        </div>
+        <h3 class="font-montserrat font-medium text-center text-xl mb-2">Save & Share With Friends</h3>
+        <p class="text-center font-montserrat">
+          
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="sectionSize bg-secondary">
+    <div>
+      <h2 class="secondaryTitle bg-underline3 bg-100%">User Testimonies</h2>
+    </div>
+    <div class="md:grid md:grid-cols-2 md:grid-rows-2">
+
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl">Feature #1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quisquam voluptate praesentium tenetur earum repellendus! Dicta
+            culpa consequuntur saepe quibusdam labore, est ex ducimus
+            tempore, quos illum officiis, pariatur ea placeat.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl">Feature #2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quisquam voluptate praesentium tenetur earum repellendus! Dicta
+            culpa consequuntur saepe quibusdam labore, est ex ducimus
+            tempore, quos illum officiis, pariatur ea placeat.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl">Feature #3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quisquam voluptate praesentium tenetur earum repellendus! Dicta
+            culpa consequuntur saepe quibusdam labore, est ex ducimus
+            tempore, quos illum officiis, pariatur ea placeat.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl">Feature #4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quisquam voluptate praesentium tenetur earum repellendus! Dicta
+            culpa consequuntur saepe quibusdam labore, est ex ducimus
+            tempore, quos illum officiis, pariatur ea placeat.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="sectionSize bg-secondary py-0">
+    <div>
+      <h2 class="secondaryTitle bg-underline4 mb-0 bg-100%">Donate</h2>
+    </div>
+    <div class="flex w-full flex-col md:flex-row">
+
+      <div class='flex-1 flex flex-col mx-6 shadow-2xl relative bg-secondary rounded-2xl py-5 px-8 my-8 md:top-24'>
+        <h3 class="font-pt-serif font-normal text-2xl mb-4">
+          The Good
+        </h3>
+        <div class="font-montserrat font-bold text-2xl mb-4">
+          $25
+          <span class="font-normal text-base"> / month</span>
+        </div>
+
+        <div class="flex">
+          <img src='/assets/logos/CheckedBox.svg' alt="" class="mr-1" />
+          <p>Benefit #1</p>
+        </div>
+        <div class="flex">
+          <img src='/assets/logos/CheckedBox.svg' alt="" class="mr-1" />
+          <p>Benefit #2</p>
+        </div>
+        <div class="flex">
+          <img src='/assets/logos/CheckedBox.svg' alt="" class="mr-1" />
+          <p>Benefit #3</p>
+        </div>
+
+        <button class=" border-2 border-solid border-black rounded-xl text-lg py-3 mt-4">
+          Choose plan
+        </button>
+      </div>
+
+      <div class='flex-1 flex flex-col mx-6 shadow-2xl relative bg-secondary rounded-2xl py-5 px-8 my-8 md:top-12'>
+        <h3 class="font-pt-serif font-normal text-2xl mb-4">
+          The Bad
+        </h3>
+        <div class="font-montserrat font-bold text-2xl mb-4">
+          $40
+          <span class="font-normal text-base"> / month</span>
+        </div>
+
+        <div class="flex">
+          <img src='/assets/logos/CheckedBox.svg' alt="" class="mr-1" />
+          <p>Benefit #1</p>
+        </div>
+        <div class="flex">
+          <img src='/assets/logos/CheckedBox.svg' alt="" class="mr-1" />
+          <p>Benefit #2</p>
+        </div>
+        <div class="flex">
+          <img src='/assets/logos/CheckedBox.svg' alt="" class="mr-1" />
+          <p>Benefit #3</p>
+        </div>
+
+        <button class=" border-2 border-solid border-black rounded-xl text-lg py-3 mt-4">
+          Choose plan
+        </button>
+      </div>
+
+      <div class='flex-1 flex flex-col mx-6 shadow-2xl relative bg-secondary rounded-2xl py-5 px-8 my-8 md:top-24'>
+        <h3 class="font-pt-serif font-normal text-2xl mb-4">
+          The Ugly
+        </h3>
+        <div class="font-montserrat font-bold text-2xl mb-4">
+          $50
+          <span class="font-normal text-base"> / month</span>
+        </div>
+
+        <div class="flex">
+          <img src='/assets/logos/CheckedBox.svg' alt="" class="mr-1" />
+          <p>Benefit #1</p>
+        </div>
+        <div class="flex">
+          <img src='/assets/logos/CheckedBox.svg' alt="" class="mr-1" />
+          <p>Benefit #2</p>
+        </div>
+        <div class="flex">
+          <img src='/assets/logos/CheckedBox.svg' alt="" class="mr-1" />
+          <p>Benefit #3</p>
+        </div>
+
+        <button class=" border-2 border-solid border-black rounded-xl text-lg py-3 mt-4">
+          Choose plan
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ  -->
+  <section class="sectionSize items-start pt-8 md:pt-36 bg-black text-white">
+    <div>
+      <h2 class="secondaryTitle bg-highlight3 p-10 mb-0 bg-center bg-100%">
+        FAQ
+      </h2>
+    </div>
+
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          What is Numerology Institute?
+        </div>
+        <img src='/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        You can download it on Gumroad.com
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          Is this service free?
+        </div>
+        <img src='/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        Yes! For you it is free.
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          Where can I find out more?
+        </div>
+        <img src='/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        Yes! No doubt about it.
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+
+  </section>
+
+  <!-- Footer -->
+  <section class="bg-black sectionSize">
+    <div class="mb-4">
+      <img src='/assets/isolated-monochrome-white.svg'' alt="Logo" class="h-4" />
+    </div>
+    <div class="flex mb-8">
+      <a href="#">
+        <img src='/assets/logos/Facebook.svg' alt="Facebook logo" class="mx-4" />
+      </a>
+      <a href="#">
+        <img src='/assets/logos/Youtube.svg' alt="Youtube logo" class="mx-4" />
+      </a>
+      <a href="#">
+        <img src='/assets/logos/Instagram.svg' alt="Instagram logo" class="mx-4" />
+      </a>
+      <a href="#">
+        <img src='/assets/logos/Twitter.svg' alt="Twitter logo" class="mx-4" />
+      </a>
+    </div>
+    <div class="text-white font-montserrat text-sm">
+      © 2022 <a href="https://kellydietrich.me">Kelly Dietrich</a>. All rights reserved
+    </div>
+  </section>
+</body>
+</html>

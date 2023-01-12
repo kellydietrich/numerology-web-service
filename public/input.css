@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=PT+Serif:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sectionSize {
+    @apply lg:px-48 md:px-12 px-4 py-14 flex flex-col items-center;
+  }
+  .secondaryTitle {
+    @apply font-pt-serif text-3xl bg-left-bottom bg-no-repeat pb-8 px-16 mb-8;
+  }
+}
+
+.growing-underline {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  overflow: hidden;
+}
+
+.growing-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: black;
+  transition: opacity 300ms, transform 300ms;
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.growing-underline:hover::after,
+.growing-underline:focus::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.btn2 {
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0px 0px 14px -7px #178BC1;
+  background-image: linear-gradient(45deg, #0D5297 0%, #178BC1  51%, #21C5EC  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn2:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn2:active {
+  transform: scale(0.95);
+}
+
+.btn2 {
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0px 0px 14px -7px #178BC1;
+  background-image: linear-gradient(45deg, #0D5297 0%, #178BC1  51%, #21C5EC  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn2:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn2:active {
+  transform: scale(0.95);
+}
+
+#background-video,#background-video-signup{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}

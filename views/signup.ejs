@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/output.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <video id="background-video-signup" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="/assets/signupbackground.mp4" type="video/mp4">
+            </video>
+        <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+            <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+                <h1 class="mb-8 text-3xl text-center font-montserrat">Sign up</h1>
+                <% if (locals.messages.errors) { %>
+                    <% messages.errors.forEach( el => { %>
+                        <div class="alert alert-danger"><%= el.msg %></div>
+                    <% }) %>    
+                <% } %>
+                <form action="/signup" method="POST">
+                <input 
+                    type="text"
+                    class="block border border-lightGrey w-full p-3 rounded mb-4 font-montserrat"
+                    name="userName"
+                    placeholder="User Name" />
+
+                <input 
+                    type="text"
+                    class="block border border-lightGrey w-full p-3 rounded mb-4 font-montserrat"
+                    name="email"
+                    placeholder="Email" />
+
+                <input 
+                    type="password"
+                    class="block border border-lightGrey w-full p-3 rounded mb-4 font-montserrat"
+                    name="password"
+                    placeholder="Password" />
+                <input 
+                    type="password"
+                    class="block border border-lightGrey w-full p-3 rounded mb-4 font-montserrat"
+                    name="confirmPassword"
+                    placeholder="Confirm Password" />
+
+                <button
+                    type="submit"
+                    class="w-full btn2 px-6 py-4 rounded-lg mr-2 mb-2"
+                >Create Account</button>
+                </form>
+                <div class="text-center text-sm text-grey-dark mt-4 font-montserrat">
+                    By signing up, you agree to the 
+                    <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                        Terms of Service
+                    </a> and 
+                    <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                        Privacy Policy
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-grey-dark mt-6 font-montserrat">
+                Already have an account? 
+                <a class="no-underline border-b border-blue text-blue" href="/login/">
+                    Log in
+                </a>.
+            </div>
+        </div>
+    </div>
+    <section class="bg-black sectionSize">
+        <div class="mb-4">
+          <img src='/assets/isolated-monochrome-white.svg' alt="Logo" class="h-4" />
+        </div>
+        <div class="flex mb-8">
+          <a href="#">
+            <img src='/assets/logos/Facebook.svg' alt="Facebook logo" class="mx-4" />
+          </a>
+          <a href="#">
+            <img src='/assets/logos/Youtube.svg' alt="Youtube logo" class="mx-4" />
+          </a>
+          <a href="#">
+            <img src='/assets/logos/Instagram.svg' alt="Instagram logo" class="mx-4" />
+          </a>
+          <a href="#">
+            <img src='/assets/logos/Twitter.svg' alt="Twitter logo" class="mx-4" />
+          </a>
+        </div>
+        <div class="text-white font-montserrat text-sm">
+          © 2022 <a href="https://kellydietrich.me">Kelly Dietrich</a>. All rights reserved
+        </div>
+      </section>
+<!--     
+    <form action="/signup" method="POST">
+        <input type="text" name="userName" placeholder="User Name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="confirmPassword" placeholder="Confirm Password">
+        <input type="submit">
+    </form> -->
+</body>
+</html>
